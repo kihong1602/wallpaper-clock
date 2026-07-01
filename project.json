@@ -1,6 +1,6 @@
 {
   "contentrating": "Everyone",
-  "description": "Programmer clock, JS code clock. minimal, programing, scripting, terminal. hacking",
+  "description": "Programmer clock, Kotlin code clock. minimal, programming, scripting, terminal. hacking",
   "file": "index.html",
   "general": {
     "properties": {
@@ -16,7 +16,7 @@
   "tags": [
     "Abstract"
   ],
-  "title": "Programmer Clock Java",
+  "title": "Programmer Clock Kotlin",
   "type": "web",
   "version": 1,
   "visibility": "public",

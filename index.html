@@ -4,75 +4,82 @@
 		<meta charset="UTF-8">
 		<meta content="width=device-width, initial-scale=1.0" name="viewport">
 		<link href="style.css" rel="stylesheet" type="text/css"/>
-		<title>Code Clock</title>
+		<title>Kotlin Clock</title>
 	</head>
 	<body>
 
 		<!--Center Content-->
 		<div class="centered">
 			<div class="window win-pos">
-				<p>Clock.java</p>
+				<p>Clock.kt</p>
 				<div class="dot">
 					<a></a>
 				</div>
 			</div>
 			<div class="border">
-				<!-- Main Method -->
+				<!-- Main Function -->
 				<h1 class="code-line">
-					<span class="keyword">public static void</span>
+					<span class="keyword">fun</span>
 					<span>&nbsp;</span>
 					<span class="method-name">main</span>
-					<span class="paren">(</span>
-					<span class="type">String[]</span>
-					<span>&nbsp;</span>
-					<span class="args">args</span><span class="paren">)</span>
+					<span class="paren">()</span>
 					<span>&nbsp;</span>
 					<span class="bracket">&#123;</span>
 				</h1>
-				<!-- Clock Variable Declaration -->
-				<h1 class="code-line clock-main">
-					<span class="class-name">Clock</span>
+				<!-- clock DSL builder -->
+				<h1 class="code-line i1">
+					<span class="keyword">val</span>
 					<span>&nbsp;</span>
 					<span class="variable-name" id="now">now</span>
 					<span>&nbsp;</span>
 					<span class="operator">=</span>
 					<span>&nbsp;</span>
-					<span class="class-name">Clock</span><span class="method">.create</span><span class="paren">()</span>
+					<span class="method">clock</span>
+					<span>&nbsp;</span>
+					<span class="bracket">&#123;</span>
 				</h1>
-				<h1 class="code-line method-chain">
-					<span class="method">.year</span><span class="paren">(</span><span class="number" id="year">null</span><span
-						class="paren">)</span>
+				<h1 class="code-line i2">
+					<span class="property">year</span>
+					<span>&nbsp;</span><span class="operator">=</span><span>&nbsp;</span>
+					<span class="number" id="year">null</span>
 				</h1>
-				<h1 class="code-line method-chain">
-					<span class="method">.month</span><span class="paren">(</span><span class="string" id="month">null</span><span
-						class="paren">)</span>
+				<h1 class="code-line i2">
+					<span class="property">month</span>
+					<span>&nbsp;</span><span class="operator">=</span><span>&nbsp;</span>
+					<span class="string" id="month">null</span>
 				</h1>
-				<h1 class="code-line method-chain">
-					<span class="method">.day</span><span class="paren">(</span><span class="number" id="day">null</span><span
-						class="paren">)</span>
+				<h1 class="code-line i2">
+					<span class="property">day</span>
+					<span>&nbsp;</span><span class="operator">=</span><span>&nbsp;</span>
+					<span class="string" id="day">null</span>
 				</h1>
-				<h1 class="code-line method-chain">
-					<span class="method">.dayOfWeek</span><span class="paren">(</span><span class="string" id="dayOfWeek">null</span><span
-						class="paren">)</span>
+				<h1 class="code-line i2">
+					<span class="property">dayOfWeek</span>
+					<span>&nbsp;</span><span class="operator">=</span><span>&nbsp;</span>
+					<span class="string" id="dayOfWeek">null</span>
 				</h1>
-				<h1 class="code-line method-chain">
-					<span class="method">.period</span><span class="paren">(</span><span class="string" id="period">null</span><span
-						class="paren">)</span>
+				<h1 class="code-line i2">
+					<span class="property">period</span>
+					<span>&nbsp;</span><span class="operator">=</span><span>&nbsp;</span>
+					<span class="string" id="period">null</span>
 				</h1>
-				<h1 class="code-line method-chain">
-					<span class="method">.hour</span><span class="paren">(</span><span class="number" id="hour">null</span><span
-						class="paren">)</span>
+				<h1 class="code-line i2">
+					<span class="property">hour</span>
+					<span>&nbsp;</span><span class="operator">=</span><span>&nbsp;</span>
+					<span class="string" id="hour">null</span>
 				</h1>
-				<h1 class="code-line method-chain">
-					<span class="method">.minute</span><span class="paren">(</span><span class="number" id="minute">null</span><span
-						class="paren">)</span>
+				<h1 class="code-line i2">
+					<span class="property">minute</span>
+					<span>&nbsp;</span><span class="operator">=</span><span>&nbsp;</span>
+					<span class="string" id="minute">null</span>
 				</h1>
-				<h1 class="code-line method-chain">
-					<span class="method">.second</span><span class="paren">(</span><span class="number" id="second">null</span><span
-						class="paren">)</span>
+				<h1 class="code-line i2">
+					<span class="property">second</span>
+					<span>&nbsp;</span><span class="operator">=</span><span>&nbsp;</span>
+					<span class="string" id="second">null</span>
 				</h1>
-				<h1 class="code-line method-chain">
-					<span class="method">.build</span><span class="paren">()</span><span class="semicolon">;</span>
+				<h1 class="code-line i1">
+					<span class="bracket">&#125;</span>
 				</h1>
 				<h1 class="code-line">
 					<span class="bracket">&#125;</span>

@@ -113,6 +113,10 @@ p {
   color: #abb2bf;
 }
 
+.property {
+  color: #abb2bf; /* DSL 프로퍼티명 - One Dark 기본 소프트 화이트 */
+}
+
 
 .code-line {
   display: flex;
@@ -120,12 +124,11 @@ p {
   /*padding-left: 1em;*/
 }
 
-.clock-main {
-  display: flex;
-  align-items: center;
+/* 코드 블록 들여쓰기 (레벨당 2rem) */
+.i1 {
   padding-left: 2rem;
 }
 
-.method-chain {
-  padding-left: 9.6em; /* 인덴트 추가 */
+.i2 {
+  padding-left: 4rem;
 }

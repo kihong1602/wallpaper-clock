@@ -21,17 +21,21 @@ function updateTime() {
   const dayOfWeeks = ["\"Sunday\"", "\"Monday\"", "\"Tuesday\"", "\"Wednesday\"", "\"Thursday\"", "\"Friday\"",
     "\"Saturday\""];
 
+  // Wrap a value in a Kotlin String literal, zero-padded to 2 digits
+  const quoted2 = (n) => "\"" + n.toString().padStart(2, '0') + "\"";
+
   // Display the time parts in the corresponding span elements
-  document.getElementById('year').textContent = year.toString().padStart(2, '0');
+  document.getElementById('year').textContent = year.toString();
   document.getElementById('month').textContent = monthNames[month];
-  document.getElementById('day').textContent = day.toString().padStart(2, '0');
+  document.getElementById('day').textContent = quoted2(day);
   document.getElementById('dayOfWeek').textContent = dayOfWeeks[dayOfWeek];
   document.getElementById('period').textContent = period;
-  document.getElementById('hour').textContent = hours12.toString().padStart(2, '0');
-  document.getElementById('minute').textContent = minutes.toString().padStart(2, '0');
-  document.getElementById('second').textContent = seconds.toString().padStart(2, '0');
+  document.getElementById('hour').textContent = quoted2(hours12);
+  document.getElementById('minute').textContent = quoted2(minutes);
+  document.getElementById('second').textContent = quoted2(seconds);
 
 }
 
-// Update the time every second
+// Render immediately, then update every second
+updateTime();
 setInterval(updateTime, 1000);
